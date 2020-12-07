@@ -6,8 +6,10 @@ const h = document.getElementById('h');
 const ctx = canvas.getContext('2d');
 function updateSize() {
     canvas.style.width = window.innerWidth + "px";
-    canvas.style.height = window.innerHeight + "px";
-}
+    setTimeout(function() {
+        canvas.style.height = window.innerHeight + "px";
+}, 0);
+};
 
 function help() {
     m.style.opacity = '0';
