@@ -5,8 +5,8 @@ const h = document.getElementById('h');
 
 const ctx = canvas.getContext('2d');
 function updateSize() {
-    canvas.style.width = window.innerWidth - 10 + "px";
-    canvas.style.height = window.innerHeight - 10 + "px";
+    canvas.style.width = window.innerWidth - 40 + "px";
+    canvas.style.height = window.innerHeight - 100 + "px";
 };
 
 function help() {
