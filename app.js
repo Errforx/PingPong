@@ -5,9 +5,9 @@ const h = document.getElementById('h');
 
 const ctx = canvas.getContext('2d');
 function updateSize() {
-    canvas.style.width = window.innerWidth - 20 + "px";
+    canvas.style.width = window.innerWidth - 5 + "px";
     setTimeout(function() {
-        canvas.style.height = window.innerHeight - 50 + "px";
+        canvas.style.height = window.innerHeight - 20 + "px";
 }, 0);
 };
 
@@ -31,7 +31,7 @@ const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
     radius : 10,
-    velocityX : 5.2,
+    velocityX : 5,
     velocityY : 5.2,
     speed : 7,
     color : 'white'
@@ -77,7 +77,8 @@ function drawArc(x, y, r, color){
 }
 
 canvas.addEventListener("mousemove", getMousePos);
-canvas.addEventListener('touchmove', getTouchPos)
+canvas.addEventListener('touchmove', getTouchPos);
+canvas.addEventListener('touchstart', getTouchPos);
 
 function getTouchPos(evt){
     let rect = canvas.getBoundingClientRect();
