@@ -80,6 +80,7 @@ canvas.addEventListener("mousemove", getMousePos);
 canvas.addEventListener('touchmove', getTouchPos);
 
 function getTouchPos(evt){
+    evt.preventDefault();
     let rect = canvas.getBoundingClientRect();
     var touchY = evt.touches[0].screenY;
     user.y = touchY - rect.top - user.height;
