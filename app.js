@@ -6,9 +6,7 @@ const h = document.getElementById('h');
 const ctx = canvas.getContext('2d');
 function updateSize() {
     canvas.style.width = window.innerWidth - 10 + "px";
-    setTimeout(function() {
-        canvas.style.height = window.innerHeight - 10 + "px";
-}, 0);
+    canvas.style.height = window.innerHeight - 10 + "px";
 };
 
 function help() {
@@ -83,7 +81,7 @@ function getTouchPos(evt){
     evt.preventDefault();
     let rect = canvas.getBoundingClientRect();
     var touchY = evt.touches[0].screenY;
-    user.y = touchY - rect.top - user.height;
+    user.y = touchY - rect.top - user.height - 5;
 }
 
 function getMousePos(evt){
