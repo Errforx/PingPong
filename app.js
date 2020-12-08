@@ -28,7 +28,7 @@ setTimeout(updateSize, 1)
 const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
-    radius : 5,
+    radius : 7.5,
     velocityX : 5,
     velocityY : 5.2,
     speed : 7,
