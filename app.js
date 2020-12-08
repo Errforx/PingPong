@@ -38,8 +38,8 @@ const ball = {
 const user = {
     x : 0,
     y : (canvas.height - 100)/2,
-    width : 5,
-    height : 50,
+    width : 7,
+    height : 70,
     score : 0,
     color : 'white'
 }
@@ -47,8 +47,8 @@ const user = {
 const com = {
     x : canvas.width - 5,
     y : (canvas.height - 100)/2,
-    width : 5,
-    height : 50,
+    width : 7,
+    height : 70,
     score : 0,
     color : 'white'
 }
