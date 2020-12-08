@@ -7,8 +7,8 @@ const ctx = canvas.getContext('2d');
 function updateSize() {
     canvas.style.width = window.innerWidth - 40 + "px";
     canvas.style.height = window.innerHeight - 200 + "px";
-    canvas.width = window.innerWidth - 40 + "px";
-    canvas.height = window.innerHeight - 200 + "px";
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 };
 
 function help() {
