@@ -6,7 +6,7 @@ const h = document.getElementById('h');
 const ctx = canvas.getContext('2d');
 function updateSize() {
     canvas.style.width = window.innerWidth - 40 + "px";
-    canvas.style.height = window.innerHeight / 1.4 + "px";
+    canvas.style.height = window.innerHeight / 1.2 + "px";
 };
 
 function help() {
@@ -105,7 +105,7 @@ function drawNet(){
 
 function drawText(text,x,y){
     ctx.fillStyle = "#FFF";
-    ctx.font = "75px fantasy";
+    ctx.font = "45px fantasy";
     ctx.fillText(text, x, y);
 }
 
