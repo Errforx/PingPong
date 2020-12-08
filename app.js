@@ -28,7 +28,7 @@ setTimeout(updateSize, 1)
 const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
-    radius : 10,
+    radius : 15,
     velocityX : 5,
     velocityY : 5.2,
     speed : 7,
@@ -38,8 +38,8 @@ const ball = {
 const user = {
     x : 0,
     y : (canvas.height - 100)/2,
-    width : 10,
-    height : 100,
+    width : 5,
+    height : 50,
     score : 0,
     color : 'white'
 }
@@ -47,8 +47,8 @@ const user = {
 const com = {
     x : canvas.width - 10,
     y : (canvas.height - 100)/2,
-    width : 10,
-    height : 100,
+    width : 5,
+    height : 50,
     score : 0,
     color : 'white'
 }
@@ -105,7 +105,7 @@ function drawNet(){
 
 function drawText(text,x,y){
     ctx.fillStyle = "#FFF";
-    ctx.font = "45px fantasy";
+    ctx.font = "40px fantasy";
     ctx.fillText(text, x, y);
 }
 
