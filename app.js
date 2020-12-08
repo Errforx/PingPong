@@ -6,7 +6,9 @@ const h = document.getElementById('h');
 const ctx = canvas.getContext('2d');
 function updateSize() {
     canvas.style.width = window.innerWidth - 40 + "px";
-    canvas.style.height = window.innerHeight - 350 + "px";
+    canvas.style.height = window.innerHeight - 200 + "px";
+    canvas.width = window.innerWidth - 40 + "px";
+    canvas.height = window.innerHeight - 200 + "px";
 };
 
 function help() {
@@ -23,7 +25,7 @@ function menu() {
     m.style.pointerEvents = 'all';
 }
 
-setTimeout(updateSize, 0.1)
+setTimeout(updateSize, 1)
 
 const ball = {
     x : canvas.width/2,
