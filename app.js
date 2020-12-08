@@ -29,9 +29,9 @@ const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
     radius : 7.5,
-    velocityX : 5,
-    velocityY : 5.2,
-    speed : 7,
+    velocityX : 4,
+    velocityY : 4.2,
+    speed : 6.7,
     color : 'white'
 }
 
@@ -45,7 +45,7 @@ const user = {
 }
 
 const com = {
-    x : canvas.width - 10,
+    x : canvas.width - 12,
     y : (canvas.height - 100)/2,
     width : 5,
     height : 50,
