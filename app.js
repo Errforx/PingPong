@@ -45,7 +45,7 @@ const user = {
 }
 
 const com = {
-    x : canvas.width - 5,
+    x : canvas.width - 7,
     y : (canvas.height - 100)/2,
     width : 7,
     height : 70,
