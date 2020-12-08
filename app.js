@@ -26,8 +26,8 @@ function menu() {
 setTimeout(updateSize, 1)
 
 const ball = {
-    x : canvas.width/2,
-    y : canvas.height/2,
+    x : canvas.width/4,
+    y : canvas.height/4,
     radius : 15,
     velocityX : 5,
     velocityY : 5.2,
