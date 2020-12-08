@@ -94,7 +94,7 @@ function resetBall(){
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
     ball.velocityX = -ball.velocityX;
-    ball.speed = 7;
+    ball.speed = 4;
 }
 
 function drawNet(){
